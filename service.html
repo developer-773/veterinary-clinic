@@ -54,7 +54,7 @@
                 <nav class="site-header__nav">
                     <ul class="site-header__list">
                         <li class="site-header__item">
-                            <a class="site-header__link" href="#">
+                            <a class="site-header__link" href="./index.html">
                                 Главная
                             </a>
                         </li>
@@ -85,7 +85,7 @@
                         </li>
                         
                     </ul>
-                    <button class="site-header__btn">Задать вопрос</button>
+                    <button id="myBtnn" class="site-header__btn">Задать вопрос</button>
                 </nav>          
             </div>
         </div>
@@ -230,13 +230,13 @@
                 </a>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a class="footer__link" href="#">Главная</a>
+                        <a class="footer__link" href="./index.html">Главная</a>
                     </li>
                     <li class="footer__item">
                         <a class="footer__link" href="#">О Клинике</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" href="#">Наши Услуги</a>
+                        <a class="footer__link" href="./service.html">Наши Услуги</a>
                     </li>
                 </ul>
                 <ul class="footer__list">
@@ -287,5 +287,34 @@
             </p>
         </div>
     </footer>
+    <div  id="mymodal" class="modal">   
+        <div class="modal__main-box ">
+            <span class="close">
+                <img src="./images/close.svg" width="18" height="18" alt="" />
+            </span>
+            <div class="modal__box">
+                <div class="modal__left">
+                    <p class="modal__txt">
+                        Авторизация:
+                    </p>
+                    <a class="modal__link" href="">Войти через Google</a>
+                    <a class="modal__link modal__link--active" href="">Войти через Facebook</a>
+                </div>
+                <div class="modal__right">
+                    <h3 class="modal__title">Задать вопрос</h3>
+                    <form class="feedback__form " action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+                        <input class="feedback__input feedback__input--active" type="text" name="user_name" placeholder="Ваше имя" aria-label="Enter your name" minlength="2" maxlength="20" required>
+                        <textarea class="feedback__textarea" name="user_text" rows="5" cols="80" placeholder="Опишите Ваш вопрос."></textarea>
+                        <button type="submit" class="feedback__linkk">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+        </div> 
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/anim.js"></script>
 </body>
 </html>
