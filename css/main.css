@@ -312,7 +312,7 @@ main {
     position: relative;
     padding-top: 153px;
     padding-bottom: 311px;
-    background-image: url("../images/hero-left-bimg.svg"),url("../images/hero-right-bimg.png");
+    background-image: url("../images/hero-left-bimg.png"),url("../images/hero-right-bimg.png");
     background-repeat: no-repeat;
     background-position: calc(50% - 471px) calc(50% - 119px), calc(50% + 604px) calc(50% + 227px);
     
