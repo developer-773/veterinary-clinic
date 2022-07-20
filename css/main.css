@@ -278,11 +278,14 @@ img {
 .site-header__btn{
     position: relative;
     margin-left: auto;
-    font-style: normal;
     font-weight: 500;
+    font-family: "Futura PT";
     font-size: 16px;
     line-height: 21px;
     color: #333333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .site-header__btn::before{
@@ -853,6 +856,15 @@ span{
     color: #949494;
 }
 
+.hashtag__box{
+    display: flex;
+    align-items: center;
+}
+
+.hashtag__box a{
+    margin-left: 7px;
+}
+
 .articles__link{
     position: relative;
     margin-left: 25px;
@@ -963,6 +975,196 @@ textarea{
     background-color: var(--btn-orange);
 }
 
+/* SERVICE PAGE START */
+
+.services{
+    padding-top: 118px;
+    padding-bottom: 168px;
+    background-image: url("../images/bird.png");
+    background-repeat: no-repeat;
+    background-size:428px 432px;
+    background-position: calc(50% + 471px) calc(50% - 749px);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .services{
+        background-image:url("../images/bird-ret.png");
+
+    }
+    
+} 
+
+.services-wrap{
+    width: 447px;
+    margin-left: 112px;
+    margin-bottom: 140px;
+}
+
+
+.services-wrap__title{
+    margin-bottom: 21px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;  
+    color: #333333;   
+}
+
+.services-wrap__desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;   
+    display: flex;
+    align-items: center;  
+    color: #949494;
+}
+
+.services__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__item{
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 34px;
+    padding: 158px 22px 45px 54px;
+    background-color: #fff;
+    background-image: url("../images/pett.svg");
+    background-repeat: no-repeat;
+    background-size: 143px 138px ;
+    background-position: top right ;
+    transition: all 0.3s ease;
+}
+
+.services__item:nth-child(4),
+.services__item:nth-child(8),
+.services__item:nth-child(12){
+    margin-right: 0;
+}
+
+
+.services__item::before{
+    position: absolute;
+    top: 65px;
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+    margin-bottom: 21px;
+    background-image: url("../images/terapevt.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+
+.services__item:nth-child(2):before{
+    background-image: url("../images/terapevtt.svg");
+}
+
+.services__item:nth-child(3):before{
+    background-image: url("../images/surgeon.svg");
+}
+
+.services__item:nth-child(4):before{
+    background-image: url("../images/dermatology.svg");
+}
+
+.services__item:nth-child(5):before{
+    background-image: url("../images/laboratory.svg");
+}
+
+.services__item:nth-child(6):before{
+    background-image: url("../images/oftalmology.svg");
+}
+
+.services__item:nth-child(7):before{
+    background-image: url("../images/uzi.svg");
+}
+
+.services__item:nth-child(8):before{
+    background-image: url("../images/chiping.svg");
+}
+
+.services__item:nth-child(9):before{
+    background-image: url("../images/passport.svg");
+}
+
+.services__item:nth-child(10):before{
+    background-image: url("../images/vacine.svg");
+}
+
+.services__item:nth-child(11):before{
+    background-image: url("../images/stom.svg");
+}
+
+.services__item:nth-child(12):before{
+    background-image: url("../images/veterinary-8\ .svg");
+}
+
+.services__item:hover{
+    filter: drop-shadow(0px 4px 20px #00000033);
+}
+
+
+.services__box{
+    width: 229px;
+}
+
+.services__txt{
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 34px;   
+    color: #333333;
+    
+}
+
+.services__desc{
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    
+}
+
+.services__link{
+    
+    display: inline-block;
+    padding: 15px 29px;
+    font-weight: 400;
+    font-family: "Futura PT";
+    font-size: 16px;
+    line-height: 21px;  
+    text-align: center;  
+    color: #FFFFFF;
+    background-color: var(--btn-orange);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.services__link:hover{
+    
+    background-color: var(--txt-link);
+}
+
+.link{
+    background-color: #78C0DE;
+    
+}
+
+.link:hover{
+    background-color: #78C0DE;
+}
+
+
+
 .footer{
     padding:54px 23px;
     background-color: #ebebeb;
@@ -1051,6 +1253,14 @@ textarea{
     margin-left: 0;
 }
 
+.footer__address{
+    transition: all 0.3s ease;
+}
+
+.footer__address:hover{
+    color: var(--btn-orange);
+}
+
 .tel__address--active{
     margin-top: 16px;
     
@@ -1059,7 +1269,7 @@ textarea{
 .tell{
     position: relative;
     margin-left: auto;
-  
+    
 }
 
 .tell::before{
