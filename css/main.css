@@ -1163,7 +1163,208 @@ only screen and (                min-resolution: 2dppx) {
     background-color: #78C0DE;
 }
 
+/* FAQ STYLES */
 
+.faq{
+    padding-top: 118px;
+    background-image: url("../images/kisspng-cat-kitten-dog-veterinarian-veterinary-medicine-cat-wearing-a-stethoscope-5aa8950c1229b5\ 1.png"), url("../images/kisspng-rosy-faced-lovebird-parrot-yellow-collared-lovebir-5afc1354e24e69\ 1.png"); 
+    background-position: calc(905px) calc( 128px), calc(892px) calc(986px);
+    background-repeat: no-repeat;
+    background-size: 569px 466px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .faq{
+        background-image:url("../images/kisspng-cat-kitten-dog-veterinarian-veterinary-medicine-cat-wearing-a-stethoscope-5aa8950c1229b5\ 1@2x.png");
+        
+    }
+    
+} 
+
+
+.faq__txt-box{
+    width: 447px;
+    margin-left: 100px;
+}
+
+.faq__title{
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+}
+
+.faq__desc{
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px; 
+    color: #949494;
+}
+
+.faq__link{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 63px;
+    padding: 15px 38px 15px 66px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    background-color:#78C0DE;
+}
+
+.faq__link::before path{
+    position: absolute;
+    top: 14px;
+    left: 40px;
+    display: inline-block;
+    width: 21px;
+    height: 22px;
+    background-image: url("../images/zapis-na-priyom.svg");
+    background-repeat: no-repeat;
+    content: "";
+    stroke: #000000;  
+}
+
+.faq-more{
+    margin-left: 100px;
+    padding-bottom: 270px;
+}
+
+.faq-more__details{
+    margin-bottom: 18px;
+    
+}
+
+.faq-more__summary  {
+    position: relative;
+    width: 577px;
+    padding: 30px 63px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.sum{
+    opacity: 0.5;
+    background-color: #F3F3F3;
+}
+
+.faq-more__summary-icon{
+    position: absolute;
+    top: 78px;
+    right: 55px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+.faq-more__details summary .faq-more__summary-icon{
+    transition: all 0.3s ease;
+    stroke: #FA5959;  
+}
+
+.faq-more__details[open] .faq-more__summary-icon{
+    transform: rotate(180deg);
+}
+
+/* details[open] summary ~ * {
+    animation: sweep .5s forwards;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; transform: translateY(-40px)}
+    100%  {opacity: 1; transform: translateY(0)}
+} */
+
+.faq-more__span-box{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 283px;
+}
+
+.faq-more__time{
+    position: relative;
+    margin-right: 28px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center; 
+    color: #333333;
+}
+
+.faq-more__time::before{
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    display: inline-block;
+    width: 28px;
+    height: 29px;
+    margin-right: 8px;
+    background-image: url("../images/ppet.svg");
+    background-repeat: no-repeat;
+    content: ""   
+}
+
+.faq-more__icon{
+    position: absolute;
+    top: 25px;
+    left: 59px;
+}
+
+.faq-more__span-name{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;  
+    text-align: right;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #78C0DE;
+}
+
+
+
+.faq-more__heading{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;  
+    display: flex;
+    align-items: center;  
+    color: #333333;
+}
+
+.faq-more__desc-box{
+    display: inline-block;
+    width: 577px;
+    padding: 30px 63px 0;
+    padding-top: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.faq-more__desc{
+    margin-top: 0;
+    padding-right: 112px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+
+
+/* FAQ STYLES END */
 
 .footer{
     padding:54px 23px;
@@ -1328,7 +1529,7 @@ only screen and (                min-resolution: 2dppx) {
         transform: scale(0.8);
         opacity: 0.1;
     }
-
+    
     100%{
         transform: scale(1);
         opacity: 1;
