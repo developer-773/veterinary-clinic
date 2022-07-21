@@ -1366,6 +1366,162 @@ only screen and (                min-resolution: 2dppx) {
 
 /* FAQ STYLES END */
 
+/* CONTACT PAGE START */
+
+.contact{
+    padding-top: 118px;  
+    padding-bottom: 49px;  
+    background-image: url("../images/contact-hero.png"); 
+    background-position: calc(50% + 500px) calc(50% + 30px);
+    background-repeat: no-repeat;
+    background-size: 673px 568px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .contact{
+        background-image:url("../images/contact-hero-ret.png");
+        
+    }
+    
+} 
+
+.contact__txt-box{
+    width: 447px;
+    margin-left: 100px;
+}
+
+.contact__heading{
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px; 
+    color: #333333;
+}
+
+.contact__desc{
+    margin-bottom: 117px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;  
+    color: #949494;
+}
+
+.contact__list{
+    display: flex;
+    justify-content: space-evenly;
+    
+    width: 800px;
+}
+
+.contact__item{
+    position: relative;
+    width: 153px;
+    padding-top: 98px;
+    margin-right: 82px;
+}
+
+.contact__item::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+    margin-bottom: 30px;
+    background-image: url("../images/contacts-icon.svg");
+    background-repeat: no-repeat;
+    content: ""    
+}
+
+.contact__item:nth-child(2)::before{
+    width: 77px;
+    height: 72px;
+    background-image: url("../images/calendar.svg");
+}
+
+.contact__address{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;  
+    color: #333333;
+    font-style: normal;
+    transition: all 0.3s ease;
+}
+
+.contact__address:hover{
+    color: var(--btn-orange)
+}
+
+.contact__txt{
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;   
+    color: #333333;
+}
+
+.contact__link{
+    display: inline-block;
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;  
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+.contact__link:hover{
+    color: var(--btn-orange)
+}
+
+.find{
+    padding-top: 240px;
+    padding-bottom: 206px;
+    background-image: url("../images/contact-section.svg");
+    background-position: calc(50% + 212px) calc(50% - 337px);
+    background-repeat: no-repeat;
+    background-size: 935px 330px;
+}
+
+.find__title{
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    line-height: 62px;  
+    color: #333333;
+}
+
+.find__box{
+    position: relative;
+    display: flex;
+}
+
+.find__box::before{
+ content: "";
+ width: 443px;
+ height: 342px;
+ top: -296px;
+ left: 22px;
+ background-image: url(../images/find-dog.png);
+ background-repeat: no-repeat;
+ background-size: contain;
+ position: absolute;
+}
+
+/*  CONTACT PAGE END*/
+
 .footer{
     padding:54px 23px;
     background-color: #ebebeb;
